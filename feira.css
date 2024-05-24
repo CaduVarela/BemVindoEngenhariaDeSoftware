@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    color: #eee; 
+}
+
+.g {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 200%;
+}
+
+.gg {
+    font-weight: 700;
+    font-size: 400%;
+}
+
+.mono {
+    letter-spacing: 10px;
+    font-family: Consolas, 'Courier New', Courier, monospace;
+}
+
+.center {
+    text-align: center;
+}
+
+.xg {
+    font-weight: 700;
+    font-size: 550%;
+}
+
+#hint {
+    margin-top: 50px;
+}
+
+.absolute {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+#roxao{
+    background-color: purple;
+    top: 0;
+    left: 0;
+}
+#verdao{
+    background-color: green;
+    top: 0;
+    right: 0;
+}
+#vermeiao{
+    background-color: #d00;
+    bottom: 0;
+    left: 0;
+}
+#azulao{
+    background-color: blue;
+    bottom: 0;
+    right: 0;
+}
+
+#regiao-central {
+    width: 50vw;
+    height: 50vh;
+    top: 25vh;
+    left: 25vw;
+    z-index: 10;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pagina-inteira {
+    width: 100vw;
+    height: 100vh;
+}
+
+.regioes {
+    transition: all 0;
+}
+
+.full {
+    transition: all .2s ease-in-out;
+    z-index: 5;
+}
+
+.conteudo {
+    opacity: 0;
+}
+
+.full .conteudo {
+    opacity: 1;
+    transition: all 2s;
+}
