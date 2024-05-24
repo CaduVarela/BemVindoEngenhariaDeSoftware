@@ -38,23 +38,23 @@ body {
     margin: 0;
 }
 
-#roxao{
-    background-color: purple;
+#roxao, #roxao video{
+    background-color: #7100AE;
     top: 0;
     left: 0;
 }
-#verdao{
-    background-color: green;
+#verdao, #verdao video{
+    background-color: #AE1A00;
     top: 0;
     right: 0;
 }
-#vermeiao{
-    background-color: #d00;
+#vermeiao, #vermeiao video{
+    background-color: #3DAE00;
     bottom: 0;
     left: 0;
 }
-#azulao{
-    background-color: blue;
+#azulao, #azulao video{
+    background-color: #0094AE;
     bottom: 0;
     right: 0;
 }
@@ -83,6 +83,7 @@ body {
 
 .regioes {
     transition: all 0;
+    overflow: hidden;
 }
 
 .full {
@@ -94,7 +95,24 @@ body {
     opacity: 0;
 }
 
+.preview {
+    display: block;
+    opacity: .7;
+}
+
+.preview video {
+    position: absolute;
+    min-width: 75vw;
+    width: 100%;
+}
+
 .full .conteudo {
     opacity: 1;
     transition: all 2s;
+}
+
+.full .preview video {
+    z-index: -1;
+    min-width: 100vw;
+    transition: all .6s;
 }
