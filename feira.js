@@ -13,6 +13,7 @@ document.addEventListener('mousedown', (e) => {
         elem.classList.remove('full');
     })
     document.addEventListener('mousemove', onmousemove, false)
+    document.body.style.cursor = 'none'
     onmousemove(e);
 })
 
@@ -56,4 +57,6 @@ function expand(e){
     regioes[maxColor].style.width = '100vw'
     regioes[maxColor].style.height = '100vh'
     regioes[maxColor].classList.add('full');
+
+    document.body.style.cursor = 'default'
 }
