@@ -16,6 +16,22 @@ body {
     backdrop-filter: brightness(85%);
 }
 
+.conteudo .sombra-roxa{
+    text-shadow: 2px 0 4px #7100AE50, 0 2px 4px #7100AE50;
+}
+
+.conteudo .sombra-verde{
+    text-shadow: 2px 0 4px #3DAE0050, 0 2px 4px #3DAE0050;
+}
+
+.conteudo .sombra-vermelha{
+    text-shadow: 2px 0 4px #AE1A0050, 0 2px 4px #AE1A0050;
+}
+
+.conteudo .sombra-azul{
+    text-shadow: 2px 0 4px #0094AE50, 0 2px 4px #0094AE50;
+}
+
 .g {
     font-weight: 700;
     font-size: 200%;
@@ -96,6 +112,8 @@ body {
     justify-content: center;
     height: 100%;
     width: 100%;
+    color: #fff;
+    text-shadow: 2px 0 4px #33333360, 0 2px 4px #33333360;
 }
 
 .pagina-inteira {
