@@ -18,8 +18,8 @@ document.addEventListener('mousedown', (e) => {
 })
 
 function onmousemove(e){
-    x = e.clientX
-    y = e.clientY
+    const x = e.clientX
+    const y = e.clientY
 
     regioes.roxao.style.height = y + 'px'
     regioes.roxao.style.width = x + 'px'

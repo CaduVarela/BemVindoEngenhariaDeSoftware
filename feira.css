@@ -39,18 +39,24 @@ body {
     margin: 0;
 }
 
+#roxao, #verdao, #vermeiao, #azulao {
+    position: absolute;
+    overflow: hidden;
+    transition: all 0;
+}
+
 #roxao, #roxao video{
     background-color: #7100AE;
     top: 0;
     left: 0;
 }
 #verdao, #verdao video{
-    background-color: #AE1A00;
+    background-color: #3DAE00;
     top: 0;
     right: 0;
 }
 #vermeiao, #vermeiao video{
-    background-color: #3DAE00;
+    background-color: #AE1A00;
     bottom: 0;
     left: 0;
 }
@@ -98,12 +104,13 @@ body {
 
 .preview {
     display: block;
-    opacity: .7;
 }
 
 .preview video {
     position: absolute;
+    filter: blur(4px);
     min-width: 75vw;
+    opacity: .85;
     width: 100%;
 }
 
@@ -115,5 +122,6 @@ body {
 .full .preview video {
     z-index: -1;
     min-width: 100vw;
-    transition: all .6s;
+    transition: all .6s, filter .8s ease-out;
+    opacity: .5;
 }
